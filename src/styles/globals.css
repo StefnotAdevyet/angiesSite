@@ -322,6 +322,29 @@ h6 {
    Forms
    ========================================================= */
 
+.intake-intro-card {
+    margin-bottom: var(--space-8);
+    background: linear-gradient(180deg,
+            rgba(255, 253, 249, 0.98) 0%,
+            var(--color-surface-soft) 100%);
+}
+
+.form-kicker,
+.success-kicker {
+    margin-bottom: var(--space-2);
+    color: var(--color-accent);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-eyebrow);
+    text-transform: uppercase;
+}
+
+.intake-intro-title,
+.success-title {
+    margin-bottom: var(--space-3);
+    color: var(--color-primary);
+}
+
 .intake-form {
     margin-top: var(--space-6);
 }
@@ -353,14 +376,62 @@ h6 {
     border-radius: var(--radius-md);
     background: var(--color-surface);
     color: var(--color-text);
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background-color 160ms ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--color-text-muted);
+    opacity: 0.85;
+}
+
+.form-field input:hover,
+.form-field select:hover,
+.form-field textarea:hover {
+    border-color: var(--color-primary);
 }
 
 .form-field textarea {
     resize: vertical;
+    min-height: 10rem;
+}
+
+.field-help {
+    margin-bottom: 0;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.required-indicator {
+    color: var(--color-accent);
+}
+
+.form-note {
+    margin-top: var(--space-4);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
 }
 
 .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
     margin-top: var(--space-6);
+}
+
+.success-card {
+    max-width: 42rem;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(15, 76, 92, 0.14);
 }
 
 /* =========================================================
@@ -368,27 +439,46 @@ h6 {
    ========================================================= */
 
 .button {
-    border: 1px solid var(--color-primary);
     border-radius: var(--radius-pill);
-    background: var(--color-primary);
-    color: var(--color-text-on-dark);
     padding: 0.9rem 1.3rem;
     cursor: pointer;
     font-weight: var(--font-weight-medium);
     transition:
         background-color 160ms ease,
         border-color 160ms ease,
+        color 160ms ease,
         transform 160ms ease,
         box-shadow 160ms ease;
 }
 
-.button:hover {
+.button-primary {
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-text-on-dark);
+}
+
+.button-primary:hover {
     background: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
     transform: translateY(-1px);
 }
 
-.button:active {
+.button-primary:active {
+    transform: translateY(0);
+}
+
+.button-secondary {
+    border: 1px solid var(--color-border-strong);
+    background: transparent;
+    color: var(--color-primary);
+}
+
+.button-secondary:hover {
+    background: var(--color-surface-soft);
+    transform: translateY(-1px);
+}
+
+.button-secondary:active {
     transform: translateY(0);
 }
 
