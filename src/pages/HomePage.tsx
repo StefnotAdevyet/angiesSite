@@ -9,20 +9,22 @@ export function HomePage() {
             <Container as="section" className="hero" aria-labelledby="home-hero-title">
                 <div className="hero-layout">
                     <div className="hero-content">
-                        <p className="eyebrow">Accessible • Modular • Modern</p>
-                        <h1 id="home-hero-title">A clean starting point for your website</h1>
+                        <p className="eyebrow">Women&apos;s Health • Wellness • Care</p>
+                        <span className="hero-accent">Nurtured</span>
+                        <h1 id="home-hero-title">Compassionate wellness support for every season of womanhood</h1>
                         <p className="hero-copy">
-                            This site is being built step by step with React, TypeScript, and
-                            accessibility in mind from the beginning.
+                            Thoughtful, supportive care designed to help women feel informed,
+                            empowered, and well through every stage of their health journey.
                         </p>
 
                         <div className="hero-actions">
-                            <Button>Get Started</Button>
+                            <Button>Book a Consultation</Button>
                         </div>
                     </div>
+
                     <div className="hero-visual" aria-hidden="true">
                         <div className="hero-visual-card">
-                            <p className="hero-visual-label">Preview</p>
+                            <p className="hero-visual-label">Wellness Approach</p>
                             <div className="hero-visual-lines">
                                 <span />
                                 <span />
@@ -40,34 +42,30 @@ export function HomePage() {
             </Container>
 
             <Container>
-                <Section title="What this project is focused on" titleId="focus-title">
+                <Section title="A thoughtful approach to care" titleId="focus-title">
                     <p>
-                        The goal is to create a modular website foundation with reusable
-                        components, accessible markup, and a structure that can grow without
-                        becoming messy.
+                        This practice is centered on whole-person wellness, clear guidance,
+                        and supportive care that helps women feel seen, informed, and cared for.
                     </p>
                 </Section>
 
-                <Section title="Core strengths" titleId="strengths-title">
+                <Section title="What clients can expect" titleId="strengths-title">
                     <div className="card-grid">
-                        <Card title="Modular by default" titleId="card-modular-title">
+                        <Card title="Personalized support" titleId="card-support-title">
                             <p>
-                                Components are split into reusable building blocks so the site
-                                can grow without turning into a pile of duplicated code.
+                                Care and guidance tailored to individual needs, concerns, and goals.
                             </p>
                         </Card>
 
-                        <Card title="Accessibility first" titleId="card-accessibility-title">
+                        <Card title="A calm, welcoming experience" titleId="card-calm-title">
                             <p>
-                                Semantic HTML, keyboard support, focus states, and clear page
-                                structure are considered from the start rather than patched in later.
+                                An environment designed to feel reassuring, respectful, and easy to navigate.
                             </p>
                         </Card>
 
-                        <Card title="Easy to extend" titleId="card-extend-title">
+                        <Card title="Trusted wellness guidance" titleId="card-guidance-title">
                             <p>
-                                The structure is simple enough to understand quickly, but strong
-                                enough to support additional pages, sections, and reusable UI.
+                                Clear next steps, thoughtful recommendations, and care grounded in trust.
                             </p>
                         </Card>
                     </div>
