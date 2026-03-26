@@ -4,6 +4,7 @@ import { ProtectedRoute } from "../features/paywall/ProtectedRoute";
 import { AboutPage } from "../pages/AboutPage";
 import { AccountPage } from "../pages/AccountPage";
 import { HomePage } from "../pages/HomePage";
+import { IntakePage } from "../pages/IntakePage";
 import { LoginPage } from "../pages/LoginPage";
 import { PremiumPage } from "../pages/PremiumPage";
 import { PricingPage } from "../pages/PricingPage";
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: "about",
                 element: <AboutPage />,
+            },
+            {
+                path: "intake",
+                element: <IntakePage />,
             },
             {
                 path: "login",

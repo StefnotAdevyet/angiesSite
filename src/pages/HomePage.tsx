@@ -1,6 +1,7 @@
 import { Button } from "../components/ui/Button";
 import { Card } from "../components/ui/Card";
 import { Container } from "../components/ui/Container";
+import { Link } from "react-router-dom";
 import { Section } from "../components/ui/Section";
 
 export function HomePage() {
@@ -18,7 +19,9 @@ export function HomePage() {
                         </p>
 
                         <div className="hero-actions">
-                            <Button>Book a Consultation</Button>
+                            <Link to="/intake" className="button-link">
+                                <Button>Book a Consultation</Button>
+                            </Link>
                         </div>
                     </div>
 
