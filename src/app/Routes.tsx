@@ -8,6 +8,7 @@ import { IntakePage } from "../pages/IntakePage";
 import { LoginPage } from "../pages/LoginPage";
 import { PremiumPage } from "../pages/PremiumPage";
 import { PricingPage } from "../pages/PricingPage";
+import { ServicesPage } from "../pages/ServicesPage";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
             {
                 path: "about",
                 element: <AboutPage />,
+            },
+            {
+                path: "services",
+                element: <ServicesPage />,
             },
             {
                 path: "intake",

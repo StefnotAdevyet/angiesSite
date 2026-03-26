@@ -32,6 +32,11 @@ export function Header() {
                             </NavLink>
                         </li>
                         <li>
+                            <NavLink to="/services" className={getNavLinkClassName}>
+                                Services
+                            </NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/premium" className={getNavLinkClassName}>
                                 Premium
                             </NavLink>
